@@ -2,14 +2,14 @@
 %define upstream_version 0.5
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 Summary:	A response from a Net::Google::AuthSub request
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Net/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://metacpan.org/dist/Net-Google-AuthSub
+Source0:	https://cpan.metacpan.org/authors/id/S/SI/SIMONW/Net-Google-AuthSub-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
