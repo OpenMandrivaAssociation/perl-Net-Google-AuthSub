@@ -1,15 +1,13 @@
 %define upstream_name    Net-Google-AuthSub
-%define upstream_version 0.5
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.5
+Release:	7
 
 Summary:	A response from a Net::Google::AuthSub request
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Net-Google-AuthSub
-Source0:	https://cpan.metacpan.org/authors/id/S/SI/SIMONW/Net-Google-AuthSub-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SI/SIMONW/Net-Google-AuthSub-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -23,7 +21,7 @@ BuildArch:	noarch
 A response from a Net::Google::AuthSub request.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
