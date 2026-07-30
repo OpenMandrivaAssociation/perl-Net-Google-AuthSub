@@ -1,13 +1,14 @@
 %define upstream_name    Net-Google-AuthSub
+%define upstream_version 0.5
 Name:		perl-%{upstream_name}
 Version:	0.5
-Release:	7
+Release:	1
 
 Summary:	A response from a Net::Google::AuthSub request
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/Net-Google-AuthSub
-Source0:	https://cpan.metacpan.org/authors/id/S/SI/SIMONW/Net-Google-AuthSub-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/S/SI/SIMONW/Net-Google-AuthSub-0.5.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -37,13 +38,4 @@ perl Makefile.PL INSTALLDIRS=vendor
 %doc META.yml Changes
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-%changelog
-* Sat Apr 23 2011 Funda Wang <fwang@mandriva.org> 0.500.0-2mdv2011.0
-+ Revision: 656948
-- rebuild for updated spec-helper
-
-* Fri Dec 03 2010 Shlomi Fish <shlomif@mandriva.org> 0.500.0-1mdv2011.0
-+ Revision: 607257
-- import perl-Net-Google-AuthSub
 
