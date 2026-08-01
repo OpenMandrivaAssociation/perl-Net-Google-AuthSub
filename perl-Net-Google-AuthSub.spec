@@ -2,7 +2,7 @@
 %define upstream_version 0.5
 Name:		perl-%{upstream_name}
 Version:	0.5
-Release:	3
+Release:	4
 
 Summary:	A response from a Net::Google::AuthSub request
 License:	GPL+ or Artistic
@@ -31,6 +31,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %check
 # soft: do not fail package on test failures
 set +e
+make test || :
 %make test || :
 
 %install
